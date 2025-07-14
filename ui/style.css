@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Arial', sans-serif;
+}
+
+.nitro-container {
+    position: fixed;
+    bottom: 90px;
+    left: 32px;
+    width: 170px;
+    background: rgba(20, 20, 20, 0.75);
+    border-radius: 7px;
+    padding: 7px 12px 7px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: none;
+    z-index: 1000;
+}
+
+.nitro-meter {
+    flex: 1;
+    height: 12px;
+    background: rgba(255,255,255,0.10);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+    position: relative;
+}
+
+.nitro-bar {
+    height: 100%;
+    background: #30e67a;
+    width: 0%;
+    transition: width 0.2s cubic-bezier(.4,1.4,.6,1);
+    border-radius: 5px 0 0 5px;
+}
+
+.nitro-percentage {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: none;
+}
+
+.nitro-text {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    text-align: left;
+    min-width: 38px;
+    text-shadow: none;
+}
+
